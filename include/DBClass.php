@@ -1,9 +1,9 @@
 <?php
 class DBClass {
-	var $db  = "ntust_copelesson";
+	var $db  = "copelessong";
 	var $server="localhost";
-	var $stduser="root";
-	var $stdpass= "joepower";
+	var $stduser="yaya";
+	var $stdpass= "yaya";
 
 function Recordset($SQL) {
 	if (($this->stdpass != "") && ($this->stduser != "") && ($this->server != "")) {
