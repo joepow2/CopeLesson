@@ -1,4 +1,7 @@
 <?php
+
+error_reporting(E_ALL ^ E_DEPRECATED); //隱藏Warning訊息
+
 class DBClass {
 	var $db  = "copelesson";
 	var $server="localhost";
