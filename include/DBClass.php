@@ -1,6 +1,6 @@
 <?php
 class DBClass {
-	var $db  = "copelessong";
+	var $db  = "copelesson";
 	var $server="localhost";
 	var $stduser="yaya";
 	var $stdpass= "yaya";
