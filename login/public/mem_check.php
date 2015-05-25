@@ -4,7 +4,8 @@
 //$_SERVER['SCRIPT_FILENAME'] = '/Applications/MAMP/htdocs/ntust_copelesson/FreeAdminTheme/mem_check.php';
 //$_SERVER['DOCUMENT_ROOT'] = '/Applications/MAMP/htdocs';
 
-//error_reporting(E_ALL ^ E_WARNING ^ E_NOTICE);
+//error_reporting(E_ALL ^ E_DEPRECATED); //隱藏Warning訊息
+error_reporting(E_ALL ^ E_WARNING ^ E_NOTICE);
 session_start();
 //echo $_SERVER['SERVER_NAME'] . '/ntust_copelesson/FreeAdminTheme/index.php';
 
