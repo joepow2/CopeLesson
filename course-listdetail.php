@@ -55,18 +55,22 @@ $CS_ID = $_GET["cs_id"];
 				<div class="grid_6">
 					<h2></h2>
 					<?php for($i=0;$i<$objDB->RecordCount($rs);$i++){
-						if($row[$i]['CH_Pic'] == ''){
+						if($row[$i]['MB_ID'] == ''){
 							$pic_path = 'images/wanted.png';
+							$LearnOrTeach ='我要教';
+							$link_path = 'course-teach.php?ch_id='.$row[$i]['CH_ID'];
 						}else{
 							$pic_path = 'backend/chapter/pic/'.$row[$i]['CH_Pic'];
+							$LearnOrTeach ='我想學';
+							$link_path = '#';
 						}
 					?>
-					<img height="153" src="<?php echo $pic_path;?>" alt="" class="img_inner fleft">
+					<img src="<?php echo $pic_path;?>" alt="" class="img_inner fleft">
 					<div class="extra_wrapper">
 						<p class="col2"><a href="#"><?php echo $row[$i]['CH_Name'];?></a></p>
 						<?php echo $row[$i]['CH_Content'];?>
 						<br>
-						<a href="#" class="btn">我要教</a>
+						<a href="<?php echo $link_path;?>" class="btn"><?php echo $LearnOrTeach; ?></a>
 					</div>
 					<div class="clear cl1"></div>
 					<?php }?>
